@@ -1,0 +1,119 @@
+/* Global Styles */
+:root {
+  --primary-color: #4299e1;
+  --secondary-color: #6b46c1;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.dark {
+  background-color: #1a202c;
+  color: #f7fafc;
+}
+
+/* Navigation */
+.nav-link {
+  position: relative;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Social Links */
+.social-link {
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: var(--primary-color);
+}
+
+/* Project Cards */
+.project-card {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.dark .project-card {
+  background-color: #2d3748;
+}
+
+/* Form Inputs */
+.form-input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e2e8f0;
+  transition: border-color 0.3s ease;
+}
+
+.dark .form-input {
+  background-color: #2d3748;
+  border-color: #4a5568;
+  color: white;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #3182ce;
+}
+
+/* Skills Section */
+.bg-white {
+    background-color: white;
+}
+
+.dark .bg-white {
+    background-color: #2d3748; /* Darker background for dark mode */
+    color: white; /* Ensures the text is visible in dark mode */
+}
+
+/* Skills Background Color */
+#skills {
+    background-color: #f7fafc; /* Light background for light mode */
+}
+
+.dark #skills {
+    background-color: #2d3748; /* Dark background for dark mode */
+    color: white; /* Ensures the text is visible in dark mode */
+}
+
+.dark .text-gray-600 {
+    color: #e2e8f0; /* Adjusted color for dark mode */
+}
